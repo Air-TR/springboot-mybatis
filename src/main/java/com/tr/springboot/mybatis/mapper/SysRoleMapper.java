@@ -19,7 +19,6 @@ public interface SysRoleMapper {
     SysRole findById(Integer id);
 
     @Select("select * from sys_role")
-
     List<SysRole> findAll();
 
     @Select("SELECT r.id, r.role_name, r.role_desc " +
